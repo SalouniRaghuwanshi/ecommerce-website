@@ -14,7 +14,7 @@ const Nav = () => {
        <div>
            <ul>
              {
-                   LINKS.map(item=>(<li ley={item.to}><Link to={item.to}>{item.Text}</Link>
+                   LINKS.map(item=>(<li key={item.to}><Link to={item.to}>{item.Text}</Link>
                    </li>
                    ))
              }
