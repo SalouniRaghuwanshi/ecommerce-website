@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import { NavList, LinkStyled } from './Navs.styled';
 
 const LINKS=[
     {to:"/",Text:"Home"},
@@ -12,14 +13,14 @@ const LINKS=[
 const Nav = () => {
     return (
        <div>
-           <ul>
+           <NavList>
              {
-                   LINKS.map(item=>(<li key={item.to}><Link to={item.to}>{item.Text}</Link>
+                   LINKS.map(item=>(<li key={item.to}><LinkStyled to={item.to}>{item.Text}</LinkStyled>
                    </li>
                    ))
              }
                
-           </ul>
+           </NavList>
        </div>
     )
 }
