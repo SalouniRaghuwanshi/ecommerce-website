@@ -1,10 +1,11 @@
 import React from 'react';
 import Nav from './pages/Nav';
 import Home from './pages/Home';
+import './pages/nav.css';
 import {Switch ,Route} from 'react-router-dom';
 function App() {
   return (
-    <div>
+    <div >
       <Nav/>
     <Switch>
      <Route exact path="/">
@@ -14,7 +15,9 @@ function App() {
       this is login page
      </Route>
     </Switch>
+
     </div>
+
   );
 }
 

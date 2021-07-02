@@ -1,6 +1,7 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import { NavList, LinkStyled } from './Navs.styled';
+import './nav.css';
+import { Link } from 'react-router-dom';
+
 
 const LINKS=[
     {to:"/",Text:"Home"},
@@ -12,17 +13,17 @@ const LINKS=[
 
 const Nav = () => {
     return (
-       <div>
-           <NavList>
+       <div className="pic">
+           <ul className="Nav">
              {
-                   LINKS.map(item=>(<li key={item.to}><LinkStyled to={item.to}>{item.Text}</LinkStyled>
+                   LINKS.map(item=>(<li key={item.to}><Link to={item.to} className="link">{item.Text}</Link>
                    </li>
                    ))
              }
                
-           </NavList>
+           </ul>
        </div>
     )
 }
 
-export default Nav
+export default Nav;
