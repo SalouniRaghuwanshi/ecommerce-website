@@ -1,18 +1,25 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Noto+Sans&display=swap');
 .Nav{
     display: flex;
     justify-content: center;
     list-style: none;
-    margin: 0 0 30px;
+    margin: 0 0 0 0px;
     padding-top:15px;
-    padding-bottom: 600px;
+    background-color: white;
+    padding-bottom: 15px;
     background-attachment: fixed;
 }
 .link{
     padding: 10px 10px;
-    font-size: 20px;
-    color:black;
+    font-size: 18px;
+    color:#4B5563;
+    font-family: 'Noto Sans', sans-serif;
     text-decoration: none;
+}
+.link:hover{
+    color: #4338CA;
+    text-decoration: underline;
 }
 .pic{
 background-image: url(../images/f.jpg);
@@ -20,4 +27,50 @@ background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
 background-position: center center;
+margin-top: 0;
 }
+.title{
+    color: darkblue;
+    font-family: 'Noto Sans', sans-serif;
+    padding-left: 160px;
+    padding-bottom: 400px; 
+    font-size: 20px;
+    margin: 0; 
+}
+.subtitle{
+    color: #4B5563;
+    padding-left: 80px;
+    padding-top: 80px;
+    padding-bottom: 10px;  
+    margin: 0; 
+    font-size: 20px;
+    font-family: 'Noto Sans', sans-serif;
+}
+@media screen and (max-width: 980px) {
+    .subtitle{
+        padding-left: 50px;
+        padding-top: 80px;    
+        font-size: 1.9vw;
+    }
+    .title{
+        padding-left: 90px;
+    padding-bottom: 300px; 
+    font-size: 1.9vw;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .subtitle{
+        padding-left: 20px;
+        padding-top: 80px;    
+        font-size: 2.5vw;
+    }
+    .title{
+        padding-left: 45px;
+    padding-bottom: 400px; 
+    font-size: 2.2vw;
+    }
+  }
+ 
+ 
+  
+

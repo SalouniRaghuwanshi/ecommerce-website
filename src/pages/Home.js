@@ -3,7 +3,8 @@ import './nav.css';
 const Home = () => {
   return (
     <div className="pic">
-      this is home page.
+      <h3 className="subtitle">Upadte Your Style with Online Shopping.</h3>
+      <h3 className="title">Discover The Trend & Save UP To 20%.</h3>
     </div>
   )
 }
