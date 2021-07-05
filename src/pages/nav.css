@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
 .Nav{
     display: flex;
     justify-content: center;
@@ -21,54 +22,117 @@
     color: #4338CA;
     text-decoration: underline;
 }
+
 .pic{
 background-image: url(../images/f.jpg);
 background-repeat: no-repeat;
 background-size: cover;
-background-attachment: fixed;
+background-attachment: absolute;
 background-position: center center;
+background-size: 100% 100%;
 margin-top: 0;
 }
 .title{
     color: darkblue;
     font-family: 'Noto Sans', sans-serif;
-    padding-left: 160px;
-    padding-bottom: 400px; 
-    font-size: 20px;
+    padding-left: 200px;
+    padding-bottom: 350px;
+    font-size: 18px;
     margin: 0; 
+   
 }
 .subtitle{
     color: #4B5563;
-    padding-left: 80px;
-    padding-top: 80px;
+    padding-left: 100px;
+    padding-top: 100px;
     padding-bottom: 10px;  
     margin: 0; 
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Noto Sans', sans-serif;
 }
-@media screen and (max-width: 980px) {
+.box{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+}
+.img{
+    width: 400px;
+    height: 400px;
+}
+.text-box{
+  padding-left: 50px;  
+  padding-top: 0%;
+  font-family: 'Noto Sans', sans-serif;
+
+}
+.text-box hr{
+width: 15%;
+margin: 0;
+margin-left: 5px;
+}
+.text-box p{
+font-size: 13px;
+letter-spacing: 0.2px;
+  color: black;
+  font-weight: 300 700;
+  font-style: inherit;
+}
+.text-box h2{
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 5px;
+    color:black;
+}
+.text-box h5{
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 5px;
+    font-weight: 300;
+    color:black;
+   
+}
+.text-box button{
+    background-color: white;
+    height: 37px;
+    width: 90px;
+    font-size: 15px;
+    border: 1px solid darkblue;
+    margin-left: 40%;
+   color: darkblue;
+}
+@media screen and (max-width: 900px) {
     .subtitle{
-        padding-left: 50px;
+        padding-left: 40px;
         padding-top: 80px;    
-        font-size: 1.9vw;
+        font-size: 15px;
     }
     .title{
-        padding-left: 90px;
-    padding-bottom: 300px; 
-    font-size: 1.9vw;
+        padding-left: 80px;
+        padding-bottom: 300px;
+    font-size: 15px;
     }
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 500px) {
     .subtitle{
-        padding-left: 20px;
-        padding-top: 80px;    
-        font-size: 2.5vw;
+        padding-top: 90px;  
+        font-size: 13px;
+        padding-bottom: 5px;
+        margin: 0;
+        padding-left: 10px;
+        width: 200px;
+        text-align: center;
     }
     .title{
-        padding-left: 45px;
-    padding-bottom: 400px; 
-    font-size: 2.2vw;
+    font-size: 12px;
+    padding-bottom:300px;
+    margin: 0;
+    padding-left: 30px;
+    width: 150px;
+    text-align: center;
     }
+ 
+       
   }
  
  
