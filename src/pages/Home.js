@@ -1,6 +1,9 @@
 import React from 'react'
 import './nav.css';
 import n from '../images/n.jpg';
+import shoes from '../images/shoes.jpg';
+import shirt from "../images/shirt.jpg";
+import thing from "../images/thing.jpg";
 const Home = () => {
   return (
     <div>
@@ -22,6 +25,15 @@ const Home = () => {
           <h5>You are intrested in shopping and Visit this website.So first you are registerd.and click here..</h5>
           <button>Register</button>
         </div>
+      </div>
+      <div>
+      <h1>FEATURED PRODUCTS</h1>
+        <h3>FEATURED LATEST SPECIAL</h3>
+      <div className="img-box">
+        <img src={shirt} className="img1"/>
+        <img src={shoes} className="img1"/>
+        <img src={thing} className="img1"/>
+      </div>
       </div>
     </div>
   )
