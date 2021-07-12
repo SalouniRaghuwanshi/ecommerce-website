@@ -3,7 +3,13 @@ import './nav.css';
 import n from '../images/n.jpg';
 import shoes from '../images/shoes.jpg';
 import shirt from "../images/shirt.jpg";
-import thing from "../images/thing.jpg";
+import watch7 from "../images/watch7.jpg";
+import dress from "../images/dress.jpg";
+import glasses from "../images/glasses.jpg";
+import parse5 from "../images/parse5.jpg";
+import sandel from "../images/sandel.jpg";
+import top from "../images/top.jpg";
+
 const Home = () => {
   return (
     <div>
@@ -12,7 +18,7 @@ const Home = () => {
       <h3 className="title">Discover The Trend & Save UP To 20%.</h3>
       </div>
       <div className="box">
-        <img src={n} className="img"/>
+        <img src={n} className="img" alt=""/>
         <div className="text-box"> 
         <h2>About</h2>
         <h2 style={{color:"darkblue"}}>Our Shop</h2>
@@ -26,15 +32,45 @@ const Home = () => {
           <button>Register</button>
         </div>
       </div>
-      <div>
+      <div className="heading-box">
       <h1>FEATURED PRODUCTS</h1>
-        <h3>FEATURED LATEST SPECIAL</h3>
+        <h3>FEATURED <span style={{color:'darkblue'}}>LATEST</span> SPECIAL</h3>
+        </div>
       <div className="img-box">
-        <img src={shirt} className="img1"/>
-        <img src={shoes} className="img1"/>
-        <img src={thing} className="img1"/>
+        <img src={shirt} className="img1" alt=""/>
+        <img src={shoes} className="img1" alt=""/>
+        <img src={watch7} className="img1" alt=""/>
+        <img src={dress} className="img1" alt=""/>
+        <img src={glasses} className="img1" alt=""/>
+        <img src={parse5} className="img1" alt=""/>
+        <img src={sandel} className="img1" alt=""/>
+        <img src={top} className="img1" alt=""/>
       </div>
-      </div>
+      <footer>
+        <h2>TRANDY FASHION!! ..</h2>
+        <div  className="footer">
+        <div>
+         <h3>CATEGORIES</h3>
+         <p>Clothes</p>
+         <p>Glasses</p>
+         <p>Shoes</p>
+         <p>Watches</p>
+         <p>jwellary</p>
+        </div>
+         <div>
+         <h3>INFORMATION</h3>
+         <p>About Us</p>
+         <p>Contact Us</p>
+         <p>Trems & Conditions</p>
+         <p>Return & Exchange</p>
+         <p>Privacy Policy</p>
+        </div>
+        <div>
+         <h3>SOCIAL MEDIA</h3>
+        <a href=""><li></li></a>
+        </div>
+        </div>
+      </footer>
     </div>
   )
 }
