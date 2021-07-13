@@ -9,6 +9,7 @@ import glasses from "../images/glasses.jpg";
 import parse5 from "../images/parse5.jpg";
 import sandel from "../images/sandel.jpg";
 import top from "../images/top.jpg";
+import Footer from './Footer';
 
 const Home = () => {
   return (
@@ -46,31 +47,7 @@ const Home = () => {
         <img src={sandel} className="img1" alt=""/>
         <img src={top} className="img1" alt=""/>
       </div>
-      <footer>
-        <h2>TRANDY FASHION!! ..</h2>
-        <div  className="footer">
-        <div>
-         <h3>CATEGORIES</h3>
-         <p>Clothes</p>
-         <p>Glasses</p>
-         <p>Shoes</p>
-         <p>Watches</p>
-         <p>jwellary</p>
-        </div>
-         <div>
-         <h3>INFORMATION</h3>
-         <p>About Us</p>
-         <p>Contact Us</p>
-         <p>Trems & Conditions</p>
-         <p>Return & Exchange</p>
-         <p>Privacy Policy</p>
-        </div>
-        <div>
-         <h3>SOCIAL MEDIA</h3>
-        <a href=""><li></li></a>
-        </div>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   )
 }
