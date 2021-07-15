@@ -12,14 +12,14 @@ body{
     list-style: none;
     margin: 0 0 0 0px;
     padding-top:15px;
-    background-color: white;
+    background-color: black;
     padding-bottom: 15px;
     background-attachment: fixed;
 }
 .link{
     padding: 10px 10px;
     font-size: 18px;
-    color:#4B5563;
+    color:#E5E7EB;
     font-family: 'Noto Sans', sans-serif;
     text-decoration: none;
 }
@@ -34,7 +34,6 @@ background-repeat: no-repeat;
 background-size: cover;
 background-attachment: absolute;
 background-position: center center;
-background-size: 100% 100%;
 margin-top: 0;
 }
 .title{
@@ -134,7 +133,71 @@ font-size: 20px;
 font-weight: 600;
 margin: 10px;
 }
+.pic1{
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: absolute;
+    background-position: center center;
+    margin-top: 0;
+    }
+.login-nav{
+    background-color: #F472B6;
+    width: 400px;
+    display: flex;
+    margin: auto;
+    list-style: none;
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-attachment: fixed;
+}
+.login-link{
+   padding-right:90px;
+    font-size: 18px;
+    padding-left: 50px;
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none; 
+}
+.login-box{
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    padding: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    flex-direction: column;
+    color: black;
+    background-color: white;
+}
+.login-text{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.login-input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    border: 1px solid black;
+    background-color: white;
+}
+.login-input:hover{
+    background-color: white;
+}
 
+.login-main-box{
+   padding-top: 20px;
+}
+.btn{
+    background-color:#F472B6;
+    border: 1px solid #F472B6;
+    height: 36px;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+}
 @media screen and (max-width: 1000px) {
     .subtitle{
         padding-left: 30px;

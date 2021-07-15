@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from './pages/Nav';
 import Home from './pages/Home';
+import Register from './pages/Register';
 import './pages/nav.css';
 import {Switch ,Route} from 'react-router-dom';
 function App() {
@@ -12,7 +13,10 @@ function App() {
       <Home/>
      </Route>
      <Route exact path="/login">
-      this is login page
+     <Register/>
+     </Route>
+     <Route exact path="/signup">
+     <Register/>
      </Route>
     </Switch>
 
