@@ -1,5 +1,14 @@
-import React from 'react';  
+import React from 'react';
+import  { useState } from "react";ss
 const Login = () => {
+    const [username, setUsername] = useState("");
+const [password, setPassword] = useState("");
+function validateFormFields() {
+    return username.length > 0 && password.length > 0;
+    }
+    function handleSubmit(event) {
+    event.preventDefault();
+    }  
     return (
         <div>
           <form className="login-box"> 
